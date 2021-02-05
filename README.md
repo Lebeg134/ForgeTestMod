@@ -1,2 +1,2 @@
 # ForgeTestMod
-Testing our Forge modding for 1.12
+Testing out Forge modding for 1.12

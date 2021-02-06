@@ -16,7 +16,7 @@ apply plugin: 'maven-publish'
 
 version = '0.0.1'
 group = 'com.lebeg134.testmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'Testmod'
+archivesBaseName = 'testmod'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 

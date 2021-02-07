@@ -1,4 +1,4 @@
-package net.lebeg134.testmod.init;
+package net.lebeg134.tm.init;
 
 import net.minecraft.item.Item;
 

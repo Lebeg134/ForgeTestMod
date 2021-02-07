@@ -3,7 +3,6 @@ package net.lebeg134.tm;
 import net.lebeg134.tm.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -18,7 +17,7 @@ public class Testmod {
     public static final String CLIENT = "net.lebeg134.tm.proxy.ClientProxy";
     public static final String SERVER = "net.lebeg134.tm.proxy.CommonProxy";
 
-    @Instance
+    @Mod.Instance(MODID)
     public static Testmod Instance;
 
     @SidedProxy(clientSide = Testmod.CLIENT, serverSide = Testmod.SERVER)

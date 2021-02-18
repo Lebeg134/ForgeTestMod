@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '0.0.1'
-group = 'net.lebeg134.tm' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'hu.lebeg134.tm' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'tm'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
@@ -113,6 +113,13 @@ publishing {
         maven {
             url "file:///${project.projectDir}/mcmodsrepo"
         }
+    }
+}
+
+processResources {
+    // copy everything else from resources
+    from(sourceSets.main.resources.srcDirs) {
+        exclude "mcmod.info"
     }
 }
 
